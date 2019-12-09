@@ -1,0 +1,115 @@
+2019-12-08 18:34:55,056 ERROR: Exception on /user/Ethanh [GET] [in /Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/ethanhellman/Desktop/microblog/app/routes.py", line 87, in user
+    posts = Post.query.filter_by(user_id=user.id).filter_by.datetime
+AttributeError: 'function' object has no attribute 'datetime'
+2019-12-08 18:35:14,903 ERROR: Exception on /user/Ethanh [GET] [in /Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/ethanhellman/Desktop/microblog/app/routes.py", line 87, in user
+    posts = Post.query.filter_by(user_id=user.id).filter_by.datetime
+AttributeError: 'function' object has no attribute 'datetime'
+2019-12-08 18:35:20,057 ERROR: Exception on /user/susan [GET] [in /Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/ethanhellman/Desktop/microblog/app/routes.py", line 87, in user
+    posts = Post.query.filter_by(user_id=user.id).filter_by.datetime
+AttributeError: 'function' object has no attribute 'datetime'
+2019-12-08 18:36:16,181 INFO: Microblog startup [in /Users/ethanhellman/Desktop/microblog/app/__init__.py:48]
+2019-12-08 18:36:18,233 ERROR: Exception on /user/susan [GET] [in /Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/ethanhellman/Desktop/microblog/app/routes.py", line 87, in user
+    posts = Post.query.filter_by(user_id=user.id).filter_by(datetime)
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2019-12-08 18:36:21,839 ERROR: Exception on /user/Ethanh [GET] [in /Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/ethanhellman/Desktop/microblog/app/routes.py", line 87, in user
+    posts = Post.query.filter_by(user_id=user.id).filter_by(datetime)
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2019-12-08 18:36:26,146 ERROR: Exception on /user/Ethanh [GET] [in /Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/ethanhellman/Desktop/microblog/app/routes.py", line 87, in user
+    posts = Post.query.filter_by(user_id=user.id).filter_by(datetime)
+TypeError: filter_by() takes 1 positional argument but 2 were given

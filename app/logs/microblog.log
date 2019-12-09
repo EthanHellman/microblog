@@ -1,0 +1,57 @@
+2019-12-08 18:36:28,002 ERROR: Exception on /user/bear [GET] [in /Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/ethanhellman/Desktop/microblog/app/routes.py", line 87, in user
+    posts = Post.query.filter_by(user_id=user.id).filter_by(datetime)
+TypeError: filter_by() takes 1 positional argument but 2 were given
+2019-12-08 18:37:46,021 INFO: Microblog startup [in /Users/ethanhellman/Desktop/microblog/app/__init__.py:48]
+2019-12-08 18:37:49,877 ERROR: Exception on /user/bear [GET] [in /Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py:1890]
+Traceback (most recent call last):
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/ethanhellman/Desktop/microblog/app/routes.py", line 87, in user
+    posts = Post.query.filter_by(user_id=user.id).order_by(datetime)
+  File "<string>", line 2, in order_by
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/sqlalchemy/orm/base.py", line 220, in generate
+    fn(self, *args[1:], **kw)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 1850, in order_by
+    criterion = self._adapt_col_list(criterion)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 308, in _adapt_col_list
+    return [
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 310, in <listcomp>
+    expression._literal_as_label_reference(o), True, True
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 4536, in _literal_as_label_reference
+    return _literal_as_text(element)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 4579, in _literal_as_text
+    return _literal_as(element, _no_text_coercion)
+  File "/Users/ethanhellman/Desktop/microblog/venv/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 4569, in _literal_as
+    raise exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: SQL expression object expected, got object of type <class 'type'> instead
+2019-12-08 18:41:53,808 INFO: Microblog startup [in /Users/ethanhellman/Desktop/microblog/app/__init__.py:48]
+2019-12-08 18:48:45,167 INFO: Microblog startup [in /Users/ethanhellman/Desktop/microblog/app/__init__.py:48]
+2019-12-08 19:04:38,462 INFO: Microblog startup [in /Users/ethanhellman/Desktop/microblog/app/__init__.py:48]
